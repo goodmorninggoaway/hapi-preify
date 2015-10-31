@@ -15,7 +15,20 @@ function preify(fn, args) {
         }
 
         result = fn.apply(this, argValues);
-        reply(result);
+
+        // Is the result a promise?
+        if (typeof result.then === 'function') {
+            return result.then(reply, function (err) {
+                if (err instanceof Error) {
+                    return reply(err);
+                }
+
+                return reply(new Error(err));
+            });
+        }
+        else {
+            return reply(result);
+        }
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "hapi-preify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Decorates plain functions with the hapi pre-handler function signature so you can write more expressive code",
   "main": "index.js",
   "scripts": {

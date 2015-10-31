@@ -9,6 +9,10 @@
   "keywords": [
     "hapi"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodmorninggoaway/hapi-preify"
+  },
   "author": "Marque Davis",
   "license": "MIT",
   "devDependencies": {
